@@ -1,0 +1,121 @@
+@import url(/css/font.css);
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #219f95;
+  --secendary-color: #afcedd;
+  --title-color: #234894;
+  --text-color: #696969;
+  --dark-color: #000;
+  --h1-color: #1e1e1e;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Vazir";
+  font-weight: 300;
+}
+h1 {
+  color: var(--h1-color);
+  font-size: 2.2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  gap: 3rem;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem;
+  justify-content: center;
+}
+.card {
+  width: 40rem;
+}
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+  align-items: center;
+}
+.card__number {
+  background-color: var(--secendary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.6rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.card__title {
+  flex: 1;
+  color: var(--title-color);
+  font-size: 1.6rem;
+}
+.card__date {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-weight: 200;
+}
+.card__content {
+  margin: 2rem 0px 0px 0px;
+}
+.card__content h2 {
+  font-size: 1.8rem;
+}
+.card__content p {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+  align-items: flex-end;
+  margin-top: 2rem;
+}
+.card__user {
+  flex: 1;
+  font-size: 1.6rem;
+  padding-top: 1rem;
+  align-self: center;
+}
+.card__footer img {
+  width: 4rem;
+  border-radius: 0.8rem;
+}
+.card__button button {
+  background-color: var(--primary-color);
+  border: unset;
+  font-family: "Vazir";
+  color: white;
+  font-weight: 300;
+  font-size: 1.6rem;
+  padding: 2rem 3rem;
+  border-radius: 0.8rem;
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    margin: 5rem;
+    height: 80vh;
+    align-items: flex-start;
+    gap: 8rem;
+  }
+}
